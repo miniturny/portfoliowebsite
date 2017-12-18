@@ -1,12 +1,12 @@
 html, body{
   height: 100%;
+  margin-bottom: 0px;
   font-family: Helvetica;
   color: white;
 }
 
 .skillScreen{
   padding: 20px;
-  height: 200%;
 }
 
 #skillScreen{
