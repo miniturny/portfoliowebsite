@@ -16,6 +16,7 @@
   width: 240px;
   height: 100%;
   padding-top: 30px;
+  padding-bottom: 0px;
   position: absolute;
   float:right;
   background-color: black;
@@ -48,7 +49,7 @@ nav a{
   list-style-type: none;
 }
 
-nav a:hover{background: #5e95a0; color: white}
+nav a:hover{background: #3c3c3c; color: white}
 
 #menuToggle:checked ~ .menu {
   position:absolute;

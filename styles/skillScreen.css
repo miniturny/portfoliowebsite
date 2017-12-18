@@ -1,0 +1,44 @@
+html, body{
+  height: 100%;
+  font-family: Helvetica;
+  color: white;
+}
+
+.skillScreen{
+  padding: 20px;
+}
+
+#skillScreen{
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  top: 0;
+  left: 150px;
+  right: 150px;
+  background-color: rgba(0, 0, 0,0.7);
+
+  transition: left .3s ease-in-out, right .3s ease-in-out;
+  -webkit-transition: left .3s ease-in-out, right .3s ease-in-out;
+}
+
+.skillPicture{
+  height: 100px;
+  width: 100px;
+
+}
+
+.skillContainer{
+  flex-direction: row;
+  padding: 20px;
+}
+
+.skill{
+  float:left;
+  display:inline;
+  padding: 20px;
+}
+
+.skillDescription{
+  width: 175px;
+  font-size: 14px;
+}

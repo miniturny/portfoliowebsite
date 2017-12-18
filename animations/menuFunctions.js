@@ -1,23 +1,34 @@
-var screen = 0;
+var screen = {no: 0, name: "#welcomeScreen"};
 
 function animateBurger(x) {
     x.classList.toggle("burgerChange");
-    if(screen == 1){
-      console.log($('#aboutScreen').css("left"));
+    if(screen.no == 1){
       if($('#aboutScreen').css("left") == (150+"px")){
-        $('#aboutScreen').css("left", "0px");
         $('#aboutScreen').css("right", "300px");
+        $('#aboutScreen').css("left", "0px");
       }else{
-        $('#aboutScreen').css("left", "150px");
         $('#aboutScreen').css("right", "150px");
+        $('#aboutScreen').css("left", "150px");
+      }
+    }else if(screen.no == 2){
+      if($('#skillScreen').css("left") == (150+"px")){
+        $('#skillScreen').css("right", "300px");
+        $('#skillScreen').css("left", "0px");
+      }else{
+        $('#skillScreen').css("right", "150px");
+        $('#skillScreen').css("left", "150px");
       }
     }
 }
 
-function showAboutScreen(){
+function showScreen(newScreen, name){
   $('#bc').click();
-  $('#welcomeScreen').fadeOut('slow');
-  $('#aboutScreen').delay(1000);
-  $('#aboutScreen').fadeIn(250);
-  screen = 1;
+  if(screen.name == name){
+    return;
+  }
+  $(screen.name).fadeOut('slow');
+  $(name).delay(750);
+  $(name).fadeIn('slow');
+  screen.no = newScreen;
+  screen.name = name;
 }
