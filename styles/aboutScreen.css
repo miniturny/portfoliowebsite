@@ -1,8 +1,35 @@
 html, body{
   height: 100%;
   font-family: Helvetica;
+  color: white;
 }
 
 .aboutScreen{
   padding: 20px;
+}
+
+#aboutScreen{
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  top: 0;
+  left: 150px;
+  right: 150px;
+  background-color: rgba(0, 0, 0,0.7);
+}
+
+.aboutText{
+  margin:auto;
+  padding: 0px 40px;
+  margin-top: 25px;
+  text-align: justify;
+  display: block;
+}
+
+#gradPic{
+  border-radius: 100px;
+  opacity: 1;
+  height: 200px;
+  width: 200px;
+  align-self: center;
 }
