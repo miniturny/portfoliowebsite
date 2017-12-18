@@ -1,0 +1,15 @@
+#welcomeScreen{
+  visibility: visible;
+
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+#aboutScreen{
+  height: 90%;
+  width: 90%;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 20px;
+  display:none;
+}

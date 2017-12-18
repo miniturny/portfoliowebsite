@@ -1,0 +1,34 @@
+@font-face { font-family: LoveStory; src: url('../fonts/loveStory.ttf'); }
+
+
+html, body{
+  height: 100%;
+  font-family: Helvetica;
+}
+
+body{
+  background-image: url("https://wallpaperscraft.com/image/new_zealand_sea_mountains_sky_clouds_109040_1920x1080.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome{
+  font-family: Helvetica, sans-serif, arial;
+  color: white;
+  opacity: 0.85;
+  font-size: 70px;
+  font-weight: 200;
+  margin: 0;
+  display: block;
+}
+/*HANDLING FADE ANIMATION*/
+
+.sub{
+  font-size: 25px;
+  margin-top: 0;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan Turnbull - Portfolio</title>
+  <!--CSS-->
+  <!--Screens-->
+  <link rel="stylesheet" href="styles/homeScreen.css">
+  <link rel="stylesheet" href="styles/aboutScreen.css">
+  <link rel="stylesheet" href="styles/navMenu.css">
+  <!--Transitions-->
+  <link rel="stylesheet" href="styles/screenTransitions.css">
+
+  <!--Javascript & JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="animations/menuFunctions.js"></script>
+</head>
+<body>
+
+<input type="checkbox" id="menuToggle" style = "display:none">
+<label for="menuToggle" class="menu_icon">
+  <div class="burger_container" id="bc" onclick="animateBurger(this)">
+    <div class="bar bar1"></div>
+    <div class="bar bar2"></div>
+    <div class="bar bar3"></div>
+  </div>
+</label>
+
+<nav class = "menu" id="menu">
+  <ul id="menuList" style = "padding-left: 0">
+    <li onclick = "showAboutScreen()"><a>ABOUT</a></li>
+    <li><a>SKILLS</a></li>
+    <li><a>PORTFOLIOS</a></li>
+    <li><a>WORK EXPERIENCE</a></li>
+    <li><a>CONTACT</a></li>
+  </ul>
+</nav>
+
+<div id="welcomeScreen">
+  <h1 class ="welcome">Welcome</h1>
+  <h1 class = "welcome sub">To Ryan Turnbull's Portfolio</h1>
+</div>
+
+<div id="aboutScreen">
+  <div class = "aboutScreen">
+    <h1>About</h1>
+  </div>
+</div>
+
+</body>
+</html>

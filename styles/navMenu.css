@@ -1,0 +1,119 @@
+.menu_icon{
+  position:absolute;
+  z-index:10;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.menu{
+  width: 240px;
+  height: 100%;
+  padding-top: 30px;
+  position: absolute;
+  float:right;
+  background-color: #10282d;
+  right:-240px;
+  z-index: 99999;
+  opacity: 0.8;
+  top: 0;
+
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+nav{
+  text-align: center;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 40px 0;
+  color: white;
+  font-size: 20px;
+  display:block;
+  cursor: pointer;
+}
+
+.menu li{
+  list-style-type: none;
+}
+
+nav a:hover{background: #5e95a0; color: white}
+
+#menuToggle:checked ~ .menu {
+  position:absolute;
+  right:0;
+}
+
+#menuToggle:checked ~ .menu_icon{
+  position: absolute;
+  right: 270px;
+  color: white;
+}
+
+#menuToggle:checked ~ .bar{
+  background-color:white;
+}
+
+#menuList{
+  position: sticky;
+  top: 30px;
+}
+
+.burger_container {
+  height: 25px;
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right:20px;
+  z-index: 15;
+}
+
+.bar1, .bar2, .bar3 {
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    transition: 0.3s;
+
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.burger_container:hover > div{
+  background-color: white;
+}
+
+.bar2{
+  top:10px
+}
+
+.bar3{
+  top:20px
+}
+
+.burgerChange .bar1 {
+    -webkit-transform: translate(-9px, 6px) rotate(-45deg) ;
+    transform: translate(-9px, 6px) rotate(-45deg) ;
+}
+
+.burgerChange .bar2 {opacity: 0;}
+
+.burgerChange .bar3 {
+    -webkit-transform: translate(-8px, -8px)rotate(45deg);
+    transform: translate(-8px, -14px)rotate(45deg);
+}
