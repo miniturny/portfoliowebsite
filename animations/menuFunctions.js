@@ -12,26 +12,35 @@ function animateBurger(x) {
           $('#aboutScreen').css("right", "20%");
           $('#aboutScreen').css("left", "0%");
         }
-
       }else{
         $('#aboutScreen').css("right", "10%");
         $('#aboutScreen').css("left", "10%");
       }
     }else if(screen.no == 2){
-      if($('#skillScreen').css("left") == (150+"px")){
-        $('#skillScreen').css("right", "300px");
-        $('#skillScreen').css("left", "0px");
+      if($('#skillScreen').css("left").replace('px', '') > 0){
+        if($(window).width() < 500){
+          $('#skillScreen').css("right", "35%");
+          $('#skillScreen').css("left", "-15%");
+        }else{
+          $('#skillScreen').css("right", "20%");
+          $('#skillScreen').css("left", "0%");
+        }
       }else{
-        $('#skillScreen').css("right", "150px");
-        $('#skillScreen').css("left", "150px");
+        $('#skillScreen').css("right", "10%");
+        $('#skillScreen').css("left", "10%");
       }
     }else if(screen.no == 3){
-      if($('#portfolioScreen').css("left") == (10+"%")){
-        $('#portfolioScreen').css("right", "20%");
-        $('#portfolioScreen').css("left", "0px");
+      if($('#portfolioScreen').css("left").replace('px', '') > 0){
+        if($(window).width() < 500){
+          $('#portfolioScreen').css("right", "35%");
+          $('#portfolioScreen').css("left", "-15%");
+        }else{
+          $('#portfolioScreen').css("right", "20%");
+          $('#portfolioScreen').css("left", "0%");
+        }
       }else{
-        $('#portfolioScreen').css("right", "150px");
-        $('#portfolioScreen').css("left", "150px");
+        $('#portfolioScreen').css("right", "10%");
+        $('#portfolioScreen').css("left", "10%");
       }
     }
 }
