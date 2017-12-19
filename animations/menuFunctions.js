@@ -3,12 +3,19 @@ var screen = {no: 0, name: "#welcomeScreen"};
 function animateBurger(x) {
     x.classList.toggle("burgerChange");
     if(screen.no == 1){
-      if($('#aboutScreen').css("left") == (150+"px")){
-        $('#aboutScreen').css("right", "300px");
-        $('#aboutScreen').css("left", "0px");
+      if($('#aboutScreen').css("left").replace('px', '') > 0){
+        console.log("doing it");
+        if($(window).width() < 500){
+          $('#aboutScreen').css("right", "35%");
+          $('#aboutScreen').css("left", "-15%");
+        }else{
+          $('#aboutScreen').css("right", "20%");
+          $('#aboutScreen').css("left", "0%");
+        }
+
       }else{
-        $('#aboutScreen').css("right", "150px");
-        $('#aboutScreen').css("left", "150px");
+        $('#aboutScreen').css("right", "10%");
+        $('#aboutScreen').css("left", "10%");
       }
     }else if(screen.no == 2){
       if($('#skillScreen').css("left") == (150+"px")){
@@ -19,8 +26,8 @@ function animateBurger(x) {
         $('#skillScreen').css("left", "150px");
       }
     }else if(screen.no == 3){
-      if($('#portfolioScreen').css("left") == (150+"px")){
-        $('#portfolioScreen').css("right", "300px");
+      if($('#portfolioScreen').css("left") == (10+"%")){
+        $('#portfolioScreen').css("right", "20%");
         $('#portfolioScreen').css("left", "0px");
       }else{
         $('#portfolioScreen').css("right", "150px");

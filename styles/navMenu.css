@@ -1,6 +1,6 @@
 .menu_icon{
   position:absolute;
-  z-index:10;
+  z-index:20;
   top: 20px;
   right: 30px;
   cursor: pointer;
@@ -13,14 +13,14 @@
 }
 
 .menu{
-  width: 240px;
+  width: 15%;
   min-height: 100%;
   padding-top: 30px;
   padding-bottom: 0px;
   position: absolute;
   float:right;
   background-color: black;
-  right:-240px;
+  right:-15%;
   z-index: 99999;
   opacity: 0.7;
   top: 0;
@@ -45,6 +45,25 @@ nav a{
   cursor: pointer;
 }
 
+#menuToggle:checked ~ .menu_icon{
+  position: absolute;
+  right: 15.5%;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  nav a {
+    font-size: 13px;
+  }
+
+  .menu{
+    width: 25%;
+    right: -25%;
+  }
+
+  #menuToggle:checked ~ .menu_icon{ right: 23%;}
+}
+
 .menu li{
   list-style-type: none;
 }
@@ -54,12 +73,6 @@ nav a:hover{background: #3c3c3c; color: white}
 #menuToggle:checked ~ .menu {
   position:absolute;
   right:0;
-}
-
-#menuToggle:checked ~ .menu_icon{
-  position: absolute;
-  right: 225px;
-  color: white;
 }
 
 #menuToggle:checked ~ .bar{
@@ -77,7 +90,7 @@ nav a:hover{background: #3c3c3c; color: white}
   cursor: pointer;
   position: absolute;
   top: 10px;
-  right:20px;
+  right:10%;
   z-index: 15;
 }
 
