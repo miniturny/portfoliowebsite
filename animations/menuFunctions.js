@@ -32,3 +32,10 @@ function showScreen(newScreen, name){
   screen.no = newScreen;
   screen.name = name;
 }
+
+window.onscroll = function (e) {
+// called when the window is scrolled.
+  var height = (document.documentElement.scrollTop+10);
+
+  document.getElementById("bc").style.top = height + "px";
+}

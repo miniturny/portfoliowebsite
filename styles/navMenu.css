@@ -96,7 +96,7 @@ nav a:hover{background: #3c3c3c; color: white}
 }
 
 .burger_container:hover > div{
-  background-color: white;
+  background-color: grey;
 }
 
 .bar2{

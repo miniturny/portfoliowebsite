@@ -3,11 +3,12 @@
 
 html, body{
   height: 100%;
-  font-family: Helvetica;
+  font-family: Roboto;
 }
 
 body{
-  background-image: url("https://wallpaperscraft.com/image/new_zealand_sea_mountains_sky_clouds_109040_1920x1080.jpg");
+  /*MOUNTAIN: https://wallpaperscraft.com/image/new_zealand_sea_mountains_sky_clouds_109040_1920x1080.jpg*/
+  background-image: url("../images/city.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -18,8 +19,7 @@ body{
 }
 
 .welcome{
-  font-family: Helvetica, sans-serif, arial;
-  color: white;
+  color: black;
   opacity: 0.85;
   font-size: 70px;
   font-weight: 200;
