@@ -14,7 +14,7 @@
 
 .menu{
   width: 240px;
-  height: 200%;
+  min-height: 100%;
   padding-top: 30px;
   padding-bottom: 0px;
   position: absolute;

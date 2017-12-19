@@ -1,15 +1,20 @@
-.skillScreen{
+.portfolioScreen{
   padding: 20px;
-  margin: 0px;
+  color: white;
   flex-direction: column;
   display: flex;
-  flex: 1;
-  color: white;
 }
 
-#skillScreen{
+.title{
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#portfolioScreen{
   position: absolute;
   text-align: center;
+  min-height:100%;
   top: 0;
   left: 150px;
   right: 150px;
@@ -19,12 +24,13 @@
   -webkit-transition: left .3s ease-in-out, right .3s ease-in-out;
 }
 
-.skillPicture{
-  height: 100px;
-  width: 100px;
+.portfolio{
+  width: 300px;
+  padding: 10px;
 }
 
-.skillContainer{
+.portfolioContainer{
+  margin-top: 75px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,12 +38,22 @@
   align-items: center;
 }
 
-.skill{
-  display:inline;
-  padding: 20px;
+.portfolio a:hover{
+  opacity: 0.5;
 }
 
-.skillDescription{
-  width: 175px;
+.portfolioPic{
+  height: 200px;
+  width: 300px;
+  min-width: 150px;
+  border-radius: 40px;
+}
+
+.portTitle{
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+.portDescription{
   font-size: 14px;
 }

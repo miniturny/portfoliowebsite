@@ -18,6 +18,14 @@ function animateBurger(x) {
         $('#skillScreen').css("right", "150px");
         $('#skillScreen').css("left", "150px");
       }
+    }else if(screen.no == 3){
+      if($('#portfolioScreen').css("left") == (150+"px")){
+        $('#portfolioScreen').css("right", "300px");
+        $('#portfolioScreen').css("left", "0px");
+      }else{
+        $('#portfolioScreen').css("right", "150px");
+        $('#portfolioScreen').css("left", "150px");
+      }
     }
 }
 
@@ -36,6 +44,5 @@ function showScreen(newScreen, name){
 window.onscroll = function (e) {
 // called when the window is scrolled.
   var height = (document.documentElement.scrollTop+10);
-
   document.getElementById("bc").style.top = height + "px";
 }
