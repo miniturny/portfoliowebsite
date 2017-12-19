@@ -17,7 +17,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height:100%;
+  max-height: 100%;
 }
 
 .welcome{
@@ -33,4 +33,12 @@ body{
 .sub{
   font-size: 25px;
   margin-top: 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    background-image: url("https://i.pinimg.com/originals/49/7d/f7/497df7ee7b493843827472420008449e.jpg");
+  }
 }
