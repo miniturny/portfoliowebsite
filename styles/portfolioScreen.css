@@ -30,7 +30,7 @@
 }
 
 .portfolioContainer{
-  margin-top: 75px;
+  margin-top: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -38,8 +38,10 @@
   align-items: center;
 }
 
-.portfolio a:hover{
-  opacity: 0.5;
+.portfolio img:hover{
+  -webkit-filter: grayscale(50%); /* Safari */
+  filter: grayscale(50%);
+  border-color: #15bdde;
 }
 
 .portfolioPic{
@@ -47,6 +49,8 @@
   width: 300px;
   min-width: 150px;
   border-radius: 40px;
+  padding: 10px;
+  border: solid 5px transparent;
 }
 
 .portTitle{
